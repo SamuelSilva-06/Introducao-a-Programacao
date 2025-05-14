@@ -45,9 +45,9 @@ int main(){
 
     total = venda - soma;
 
-    printf("Lucro abaixo de 10%: %d\n",abaixo);
+    printf("Lucro abaixo de 10%%: %d\n",abaixo);
     printf("Lucro entre 10%% e 20%%: %d\n",entre);
-    printf("Lucro acima de 20%: %d\n",acima);
+    printf("Lucro acima de 20%%: %d\n",acima);
     printf("Valor total da compra: %.2f\n",soma);
     printf("Valor total de venda: %.2f\n",venda);
     printf("Lucro total: %.2f\n",total);
