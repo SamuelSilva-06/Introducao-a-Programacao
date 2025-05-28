@@ -21,7 +21,9 @@ int main(){
 
     else if (horai < horaf && minutoi > minutof)
     {
-        
+        duracaomin =(60-minutoi) + minutof;
+
+        printf("O JOGO DUROU 0 HORA(S) E %d MINUTO(S)\n",duracaomin);
     }
     
     
