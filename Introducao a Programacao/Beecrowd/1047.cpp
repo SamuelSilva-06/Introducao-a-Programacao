@@ -4,27 +4,24 @@
 using namespace std;
 
 int main(){
-    int horai,horaf,minutoi,minutof,duracaoh,duracaomin;
+    int horai,horaf,minutoi,minutof,duracaoinicio,duracaofinal,duracaototal;
     cin >> horai >> minutoi >> horaf >> minutof;
 
-    if (horaf == horai && minutof == minutoi)
+    duracaoinicio = horai * 60 + minutoi;
+    duracaofinal = horaf * 60  + minutof;
+    duracaototal = duracaofinal - duracaoinicio;
+
+
+
+    if (duracaototal <= 0)
     {
-        printf("O JOGO DUROU 24 HORA(S) E 0 MINUTO(S)\n");
-    }
-    
-    else if (horai < horaf && minutoi < minutof)
-    {
-        duracaoh = horaf - horai;
-        duracaomin = minutof - minutoi;
-        printf("O JOGO DUROU %d HORA(S) E %d MINUTOS(S)\n",duracaoh,duracaomin);
+        duracaototal += 24 * 60;
     }
 
-    else if (horai < horaf && minutoi > minutof)
-    {
-        duracaomin =(60-minutoi) + minutof;
+    int hora = duracaototal / 60;
+    int min = duracaototal % 60;
 
-        printf("O JOGO DUROU 0 HORA(S) E %d MINUTO(S)\n",duracaomin);
-    }
-    
+
+    printf("O JOGO DUROU %d HORA(S) E %d MINUTO(S)\n",hora,min);
     
 }
