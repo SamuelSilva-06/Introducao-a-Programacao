@@ -22,12 +22,14 @@ using namespace std;
     void printvector(int A[],int n){
         for (int i = 0; i < n; i++)
         {
-            printf("%d",A[i]);
+            printf("%d,",A[i]);
         }
         
     }
 
 int main(){
     const int n = 8;
-    int A[8] = {7,8,9,};
+    int A[8] = {7,8,9,-4,5,-3,-7,100};
+    insertionsort(A,n);
+    printvector(A,n);
 }

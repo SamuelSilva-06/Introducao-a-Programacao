@@ -3,8 +3,8 @@
 
 using namespace std;
 
-    float mediatemp(float n1,float n2){
-        return (2 * n1 )+( 3 * n2) /5;
+    float medianota(float n1,float n2){
+        return (2 * n1 + 3 * n2) /5;
     }
     
 int main(){
@@ -14,5 +14,5 @@ int main(){
     printf("digite a nota da n2\n");
     cin >> n2;
 
-    printf("Sua media e %.2f\n",mediatemp(n1,n2));
+    printf("Sua media e %.2f\n",medianota(n1,n2));
 }

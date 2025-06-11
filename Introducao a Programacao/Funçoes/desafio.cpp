@@ -10,17 +10,14 @@ using namespace std;
             {
                 if (M[i][j] == '0')
                 {
-                    
                     M[i][j] = ' ';
                 }
                 else if (M[i][j] == '1')
                 {
-                    
                     M[i][j] = 'M';
                 }
                 else if (M[i][j] =='2')
                 {
-                    
                     M[i][j] = 'T';
                 }
                 
