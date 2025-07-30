@@ -5,6 +5,7 @@
 #include <vector>
 #include <string>
 #include <iomanip>
+
 using namespace std;
 
 struct Venda{
@@ -109,7 +110,7 @@ int main(){
 				}
 				{
 					string nome_arquivo;
-					cout << "Digite o nome do arquivo (com caminho completo): ";
+					cout << "Digite o nome do arquivo: ";
 					cin >> nome_arquivo;
 					ifstream arquivo(nome_arquivo);
 
@@ -182,7 +183,7 @@ int main(){
 				}
 				double lucro;
 				string maisRentavel = produtoMaisRentavel(vendas, lucro);
-				printf("Produto mais rentável (ID):%s, com lucro total de R$%.2f\n\n", maisRentavel.c_str(), lucro);
+				printf("Produto mais rentavel (ID):%s, com lucro total de R$%.2f\n\n", maisRentavel.c_str(), lucro);
 				break;
 			}
 
@@ -192,7 +193,7 @@ int main(){
 			}
 
 			default: {
-				printf("Opção Inválida!\n");
+				printf("Opcao Invalida!\n");
 			}
 		}
 	} while (opcao != 5);
